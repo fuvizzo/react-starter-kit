@@ -16,3 +16,15 @@ ul{
     margin: 0;
     padding: 0;
 }
+
+.leaflet-circle-marker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    min-height: 40px;
+    font-size: 20px;
+    border-radius: 100%;
+    background-color: black;
+    color: white;
+}

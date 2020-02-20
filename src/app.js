@@ -1,11 +1,12 @@
 import React from 'react';
 
-import {View, Text} from "wasabi-kit";
+import { View } from 'wasabi-kit';
+import RoutePlanner from './containers/RoutePlanner';
 
 function App() {
   return (
     <View container direction="column" align="center">
-      <Text type="h1">Starting good so far!</Text>
+      <RoutePlanner />
     </View>
   );
 }
