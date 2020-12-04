@@ -1,19 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 
 import App from './app';
 import './App.css';
-import configureStore from './redux/configureStore';
-
-const store = configureStore();
+import store from './store';
 
 ReactDOM.render(
-  <Provider onUpdate={() => window.scrollTo(0, 0)} store={store}>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+  <Provider store={store}>
+    <App />
   </Provider>,
-  document.getElementById('app')
+  document.getElementById('app'),
 );

@@ -1,0 +1,43 @@
+module.exports = {
+  env: {
+    browser: true,
+    es2021: true,
+    jest: true,
+    'cypress/globals': true,
+  },
+  extends: [
+    'plugin:react/recommended',
+    'airbnb',
+    'plugin:cypress/recommended',
+    'plugin:import/errors',
+    'plugin:import/warnings',
+    'plugin:import/typescript',
+  ],
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 12,
+    sourceType: 'module',
+  },
+  plugins: ['react', 'enzyme'],
+  rules: {
+    'linebreak-style': 0,
+    'func-names': ['error', 'never'],
+    'no-param-reassign': 0,
+    'jsx-a11y/label-has-for': 0,
+    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'react/prop-types': 0,
+    'class-methods-use-this': 0,
+    'no-alert': 0,
+    'no-nested-ternary': 0,
+    'no-lonely-if': 0,
+    'no-return-assign': 0,
+    'prefer-promise-reject-errors': 0,
+    'import/no-extraneous-dependencies': 0,
+    'no-plusplus': 0,
+    'function-paren-newline': 0,
+    'no-confusing-arrow': 0,
+    'no-unneeded-ternary': 0,
+  },
+};
